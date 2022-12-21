@@ -7,7 +7,6 @@ body::-webkit-scrollbar{
 html body{
 
     height: 2000px;
-    
 
 }
 
@@ -34,15 +33,29 @@ html body{
 
 
 .typed-out{
-    color:black;
-    overflow: hidden;
-    border-right: .15em solid lightblue;
-    white-space: nowrap;
-    font-size: 1.6rem;
-    width: 0%;
-    animation: 
-      typing 1s steps(10, end) forwards,
-      blink .8s infinite;
+     display:block;
+     color:black;
+     overflow: hidden;
+     border-right: .15em solid lightblue;
+     white-space: nowrap;
+     width: 0%;
+     line-height:normal;
+     animation: 
+     typing 1s steps(19, end) forwards,
+     blink .8s infinite;
+}
+
+
+
+.type-finish{
+
+    display: block;
+}
+  
+
+.typed-stop{
+    display: none;
+    line-height: 0%;
 }
 
 /*contanier*/
@@ -61,7 +74,7 @@ html body{
 .header{
 
     position:relative;
-    height: 10%;
+    height: 5%;
 
 }
 
@@ -76,21 +89,24 @@ html body{
 /* nav Btn*/
 
 .NavBtnSize{
-  background-color: #4CAF50; /* Green */
+
   border: none;
   color: white;
   text-decoration: none;
   height: 40%;
-  width: 100%;
+  width: 70%;
+  position: absolute;
+  z-index: 2;
 
 }
 
 .Nav{
     margin-top: 0.5%;
-    height: 20vh;
+    height: 15vh;
     width: 18vw;
     top:0%;
     right: 0%;
+    margin-right:-2.3%;
     position: fixed;
 }
 
@@ -157,7 +173,7 @@ html body{
   }
 
   .navbar-toggler-icon span:nth-child(1) {
-    top: 5%;
+    top: 10%;
   }
   
   .navbar-toggler-icon span:nth-child(2),.navbar-toggler-icon span:nth-child(3) {
@@ -165,7 +181,7 @@ html body{
   }
   
   .navbar-toggler-icon span:nth-child(4) {
-    top: 81%;
+    top: 70%;
   }
   
   .navbar-toggler-icon.open span:nth-child(1) {
@@ -198,6 +214,7 @@ html body{
     transition: all 0.2s;
     overflow: visible;
     float: right;
+    width: 200%;
 }
 
 .active.collapsing{
@@ -217,8 +234,97 @@ html body{
 
 }
 
+.MainMeunTitle{
+
+    padding-top: 20%;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 2.5rem;
+
+    padding-bottom: 10%;
+
+}
+
+@media ( min-width: 467px){
+
+    .MainMeunTitle{
+
+        padding-top: 20%;
+        font-family: 'Zen Maru Gothic', sans-serif;
+        font-size: 4rem;
+
+        padding-bottom: 10%;
+
+        
+    
+    }
+    
+
+}
 
 
 
+.MainMeunSubTitle{
+
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 1rem;
+
+    
+
+}
+
+
+@media ( min-width: 467px){
+
+    .MainMeunSubTitle{
+
+        font-family: 'Zen Maru Gothic', sans-serif;
+        font-size: 1.5rem;
+    
+        
+    
+    }
+    
+
+}
+
+
+
+/* Arcticle */
+
+
+.typer-content{
+
+    height: fit-content;
+    width:fit-content;
+    font-family: Lucida Console;
+    font-size: 1.3rem;
+
+}
+
+@media ( min-width: 467px ) {
+    
+    .typer-content{
+
+        height: fit-content;
+        width:fit-content;
+        font-family: Lucida Console;
+        font-size: 2.3rem;
+    
+    }
+    
+}
+
+.MainMeunSubTitle a{
+
+    text-decoration: none;
+    color: gray;
+}
+
+
+.MainMeunSubTitle a:hover{
+
+    text-decoration: none;
+    color:lightblue;
+}
 
  
