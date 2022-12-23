@@ -4,11 +4,16 @@ body::-webkit-scrollbar{
 }
 /*define Web size*/
 
-html body{
 
-    height: 2000px;
 
+main{
+
+    height:49vw;
+    padding-top: 2%;
 }
+
+
+
 
 
 
@@ -61,7 +66,7 @@ html body{
 /*contanier*/
 .FullSize{
 
-    height: 100%;
+    height: 87%;
 }
 
 .container-fluid{
@@ -78,47 +83,125 @@ html body{
 
 }
 
-.headerItem.col-lg-1.col-md-2.col-4{
 
-    
+.headerItem{
+
+    height: 10%;
+
+}
+.headerItem.col-lg-2.col-md-4.col-6 a{
+
     height: 100%;
-    position:absolute;
+}
 
+.Logo{
+    margin-top:10%;
+    height: 55%;
+    width: 55%;
+    margin-bottom: 5%;
+
+}
+
+@media (min-width: 476px){
+    .Logo{
+        margin-top:11%;
+        height: 42%;
+        width: 42%;
+        margin-bottom: 5%;
+    
+    }
+    
+}
+
+
+@media (min-width: 768px){
+    .Logo{
+        margin-top:12%;
+        height: 38%;
+        width: 38%;
+        margin-bottom: 5%;
+    
+    }
+    
+}
+
+
+@media(min-width: 992px){
+    .Logo{
+        margin-top:13%;
+        height: 53%;
+        width: 53%;
+        margin-bottom: 5%;
+    
+    }
+    
 }
 
 /* nav Btn*/
 
 .NavBtnSize{
 
+  margin-top: 10%;
+  margin-left: 30%;
   border: none;
   color: white;
   text-decoration: none;
-  height: 40%;
+  height: 10vh;
   width: 70%;
   position: absolute;
   z-index: 2;
 
 }
 
+@media (min-width: 476px){
+    .NavBtnSize{
+
+        margin-top: 25%;
+        margin-left: 5%;
+        border: none;
+        color: white;
+        text-decoration: none;
+        height: 10vh;
+        width: 70%;
+        position: absolute;
+        z-index: 2;
+      
+      }
+      
+    
+}
+
 .Nav{
-    margin-top: 0.5%;
-    height: 15vh;
-    width: 18vw;
-    top:0%;
-    right: 0%;
-    margin-right:-2.3%;
+    height: 28vh;
+    width: 30vw;
+    top:0;
+    right: 0;
     position: fixed;
+    z-index: 4;
+}
+
+@media (min-width: 476px){
+    .Nav{
+
+        height:28vh;
+        width: 18vw;
+        top:0%;
+        right: 0%;
+        position: fixed;
+        z-index: 4;
+    }
 }
 
 
 @media (min-width: 768px){
     .Nav{
 
-        height: 20vh;
+        height: 28vh;
         width: 13vw;
         top:0%;
         right: 0%;
         position: fixed;
+        z-index:4 ;
     }
 }
 
@@ -126,17 +209,19 @@ html body{
 @media(min-width: 992px){
     .Nav{
 
-        height: 20vh;
+        height: 28vh;
         width: 8vw;
         top:0%;
         right: 0%;
         position: fixed;
+        z-index: 4;
     }
 }
 
 
 .navbar-toggler-icon{
 
+    padding-top: 2%;
     height: 100%;
     width: 70%;
     -webkit-transform: rotate(0deg);
@@ -211,17 +296,56 @@ html body{
   }
 
 .collapse{
-    transition: all 0.2s;
+    transition: all 0.1s;
     overflow: visible;
     float: right;
     width: 200%;
+}
+
+@media (min-width: 476px){
+    .collapse{
+        transition: all 0.1s;
+        overflow: visible;
+        float: right;
+        width: 300%;
+    }
+    
+}
+
+@media (min-width: 768px){
+    .collapse{
+        transition: all 0.1s;
+        overflow: visible;
+        float: right;
+        width: 330%;
+    }
+
+}
+
+
+ @media(min-width: 992px){
+    .collapse{
+        transition: all 0.1s;
+        overflow: visible;
+        float: right;
+        width: 380%;
+    }
+}
+
+@media(min-width: 1200px){
+    .collapse{
+        transition: all 0.1s;
+        overflow: visible;
+        float: right;
+        width: 400%;
+    }
 }
 
 .active.collapsing{
     width:100%;
 
     transform: translateX(295px);
-    transition: all 0.2s;
+    transition: all 0.1s;
 }
 
 
@@ -230,10 +354,17 @@ html body{
 
     width: 100%;
     transform: translateX(295px);
-    transition: all 0.2s;
+    transition: all 0.1s;
 
 }
 
+
+.MainMeun{
+
+    text-align: center;
+    padding-left: 16px;
+
+}
 .MainMeunTitle{
 
     padding-top: 20%;
@@ -250,7 +381,7 @@ html body{
 
         padding-top: 20%;
         font-family: 'Zen Maru Gothic', sans-serif;
-        font-size: 4rem;
+        font-size: 3rem;
 
         padding-bottom: 10%;
 
@@ -261,6 +392,34 @@ html body{
 
 }
 
+
+@media (min-width: 768px){
+    .MainMeunTitle{
+
+        padding-top: 20%;
+        font-family: 'Zen Maru Gothic', sans-serif;
+        font-size: 3.4rem;
+
+        padding-bottom: 10%;
+
+        
+    
+    }
+}
+
+
+ @media(min-width: 992px){
+    .MainMeunTitle{
+
+        padding-top: 20%;
+        font-family: 'Zen Maru Gothic', sans-serif;
+        font-size: 4rem;
+        padding-bottom: 10%;
+
+        
+    
+    }
+}
 
 
 .MainMeunSubTitle{
@@ -289,7 +448,9 @@ html body{
 
 
 
+
 /* Arcticle */
+
 
 
 .typer-content{
@@ -297,11 +458,14 @@ html body{
     height: fit-content;
     width:fit-content;
     font-family: Lucida Console;
-    font-size: 1.3rem;
+    font-size: 2.6vw;
+    margin-left: 5%;
 
 }
 
-@media ( min-width: 467px ) {
+/*
+
+@media ( min-width: 565px ) {
     
     .typer-content{
 
@@ -314,6 +478,7 @@ html body{
     
 }
 
+ */
 .MainMeunSubTitle a{
 
     text-decoration: none;
@@ -327,4 +492,203 @@ html body{
     color:lightblue;
 }
 
- 
+/*主區域*/
+
+
+
+.lable{
+
+    font-size: 1.5rem;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    margin-top: 2%;
+
+    text-align: center;
+    width: 16%;
+    border : 3px white solid;
+
+ }
+
+ @media (min-width: 476px){
+    .lable{
+
+        font-size: 2.5rem;
+        font-family: 'Zen Maru Gothic', sans-serif;
+        margin-top: 2%;
+    
+        text-align: center;
+        width: 16%;
+        border : 3px white solid;
+    
+     }
+}
+
+ @media (min-width: 768px){
+
+
+    .lable{
+
+        font-size: 2.7rem;
+        font-family: 'Zen Maru Gothic', sans-serif;
+        margin-top: 2%;
+    
+        text-align: center;
+        width: 16%;
+        border : 3px white solid;
+    
+     }
+ }
+
+
+ @media(min-width: 992px){
+
+    .lable{
+
+        font-size: 3.1rem;
+        font-family: 'Zen Maru Gothic', sans-serif;
+        margin-top: 2%;
+    
+        text-align: center;
+        width: 16%;
+        border : 3px white solid;
+    
+     }
+
+ }
+
+ .item{
+
+    margin-top: 5%;
+    margin-bottom: 10%;
+    font-family: 'Zen Maru Gothic', sans-serif;
+
+ }
+
+
+.item .col-lg-5 ,.item .col-lg-4{
+
+    border: white 3px solid;
+
+}
+
+ .sujectImg{
+
+   
+    width: 100%;
+    height: 100%;
+ }
+
+ .sujectText{
+
+    padding-top: 5%;
+    text-align: center;
+    font-size: .9rem;
+    font-weight: 600;
+
+}
+
+
+@media (min-width: 476px){
+    .sujectText{
+
+        padding-top: 6%;
+        text-align: center;
+        font-size: 1.7rem;
+        font-weight: 600;
+
+    }
+    
+}
+
+@media (min-width: 768px){
+    .sujectText{
+        padding-top: 6%;
+        text-align: center;
+        font-size: 2.3rem;
+        font-weight: 600;
+
+    }
+
+}
+
+
+ @media(min-width: 992px){
+    .sujectText{
+        padding-top: 10%;
+        text-align: center;
+        font-size: 2.6rem;
+        font-weight: 600;
+
+    }
+}
+
+
+
+@media(min-width: 1200px){
+    .sujectText{
+        padding-top: 20%;
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 600;
+        line-height: 30px;
+    }
+}
+
+.sujectText2{
+
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 13px;
+
+}
+
+
+@media (min-width: 476px){
+    .sujectText2{
+
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 600;
+        line-height: 30px;
+    }
+    
+}
+
+@media (min-width: 768px){
+    .sujectText2{
+        padding-top: 3%;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 600;
+        line-height: 30px;
+    }
+
+}
+
+
+ @media(min-width: 992px){
+    .sujectText2{
+        text-align: center;
+        font-size: 2.3rem;
+        font-weight: 600;
+        line-height: 30px;
+    }
+}
+
+@media(min-width: 1200px){
+    .sujectText2{
+        padding-top: 7%;
+        text-align: center;
+        font-size: 2.6rem;
+        font-weight: 600;
+        line-height: 50px;
+    }
+}
+
+#More{
+
+    font-size: 3vw;
+    border: white 2px solid;
+    text-decoration: none;
+
+}

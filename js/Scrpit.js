@@ -14,6 +14,8 @@ $(document).ready(function () {
 
 });
 
+
+
 setInterval(function () {
 
     $(".typer-content:nth-child("+index+") div").removeClass("typed-stop");
