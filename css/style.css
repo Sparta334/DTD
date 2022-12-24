@@ -371,7 +371,7 @@ main{
     font-family: 'Zen Maru Gothic', sans-serif;
     font-size: 2.5rem;
 
-    padding-bottom: 10%;
+    padding-bottom: 5%;
 
 }
 
@@ -383,7 +383,7 @@ main{
         font-family: 'Zen Maru Gothic', sans-serif;
         font-size: 3rem;
 
-        padding-bottom: 10%;
+        padding-bottom: 5%;
 
         
     
@@ -400,7 +400,7 @@ main{
         font-family: 'Zen Maru Gothic', sans-serif;
         font-size: 3.4rem;
 
-        padding-bottom: 10%;
+        padding-bottom: 5%;
 
         
     
@@ -414,7 +414,7 @@ main{
         padding-top: 20%;
         font-family: 'Zen Maru Gothic', sans-serif;
         font-size: 4rem;
-        padding-bottom: 10%;
+        padding-bottom: 5%;
 
         
     
@@ -690,5 +690,112 @@ main{
     font-size: 3vw;
     border: white 2px solid;
     text-decoration: none;
+
+}
+
+.footer{
+    background-color: #d3531a;
+    margin-top:10%;
+
+}
+
+.footerImg{
+
+    height:80%;
+    width:100%;
+    margin-right: 1%;
+
+}
+.footerBtnImg{
+
+    height:100%;
+    width: 100%;
+}
+
+.footerBtn{
+
+    height: 40%;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-left: 7%;
+}
+.footerBtnList{
+    height: 80%;
+    width: 100%;
+    display: flex;
+}
+
+
+
+/* Info.html */
+
+.MainImg{
+
+    margin-top: 2%;
+    height: 30vw;
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+
+.ArrowContainer{
+
+    display: flex;
+
+}
+
+.SujectLabel{
+
+
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 2.6vw;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    width:20%;
+    text-align: center;
+
+}
+
+
+/*Info.html grid*/
+
+.wrapper{
+
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    
+
+}
+
+.wrapper .Subjectbox:nth-child(2n) .SubjectBoxImg{
+
+    margin-right: auto;
+    margin-left: 6%;
+
+}
+
+.wrapper .Subjectbox:nth-child(2n+1) .SubjectBoxImg{
+
+    margin-left: auto;
+    margin-right: 6%;
+
+}
+
+.Subjectbox{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.SubjectBoxImg{
+
+    width:70%;
+    height: 80%;
 
 }

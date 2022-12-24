@@ -1,0 +1,9 @@
+const firebaseConfig = {
+    apiKey: "AIzaSyBiRgW2Wb4IDcFcG0ov_xb_Ynoo0Ru7PhE",
+    authDomain: "dtd-firebase.firebaseapp.com",
+    projectId: "dtd-firebase",
+    storageBucket: "dtd-firebase.appspot.com",
+    messagingSenderId: "1027363315132",
+    appId: "1:1027363315132:web:a12a6e8df62ad249fc1fb9",
+    measurementId: "G-DPLSZB53H2"
+  };
