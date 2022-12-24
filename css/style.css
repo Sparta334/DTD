@@ -8,7 +8,7 @@ body::-webkit-scrollbar{
 
 main{
 
-    height:49vw;
+    height:40vw;
     padding-top: 2%;
 }
 
@@ -1066,11 +1066,12 @@ main{
 
 #message-list{
 
-    height: 100%;
+    height: 93.5%;
     padding:0;
     margin-top: 3%;
     overflow-y: scroll;
     margin-right: 1%;
+
 
      
 }
@@ -1090,17 +1091,18 @@ main{
 
   #message-list::-webkit-scrollbar-track-piece {
 
-    background: transparent;
+    background: gray;
+    border-radius: 10px;
 
   }
 
   #message-list::-webkit-scrollbar-thumb {
 
-    border-radius: 4px;
+    border-radius: 30px;
 
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: wheat;
 
-    border: 1px solid slategrey;
+    border: 7px solid slategrey;
 
   }
 
@@ -1177,9 +1179,17 @@ main{
 }
 
 .chat{
-
+    font-family: 'Zen Maru Gothic', sans-serif;
     padding-left: 3%;
-    font-size: 1.5vw;
+    font-size: 0.4vw;
+}
+
+@media(min-width: 992px){
+    .chat{
+
+        padding-left: 3%;
+        font-size: 1.5vw;
+    }
 }
 
 .chatTime{
@@ -1189,6 +1199,7 @@ main{
 
 @media(min-width: 992px){
     .chatTime{
+        font-family: 'Zen Maru Gothic', sans-serif;
         display:block;
         font-size: .8vw;
         position: absolute;

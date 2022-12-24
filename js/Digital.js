@@ -34,7 +34,7 @@ $(document).ready(function () {
         $(this).html(`<span class="spinner-border" style="width: 1.5vw; height: 1.5vw;"  ></span>`);
 
         let Path = $(this).attr("id");
-        let FullPath = "Computer_Progrmming/"+Path+".zip";
+        let FullPath = "Digital_Design/"+Path+".zip";
 
         
         dbStorage.ref(FullPath).getDownloadURL()
@@ -85,7 +85,7 @@ $(document).ready(function () {
 
     // 聊天室後臺擷取
     let ChatRoomMessage = db.collection("chatRoom").doc("Room1");
-    let messageCollection = ChatRoomMessage.collection("Message");
+    let messageCollection = ChatRoomMessage.collection("MessageDigital");
     const $messageList = $("#message-list");
     const $messageField = $("#message-field");
 
