@@ -813,12 +813,23 @@ main{
     margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
+    overflow: hidden;
+}
+
+.FileBtn{
+
+    border-color:transparent;
+    border-width: 0px;
+    background-color: transparent;
+    
 }
 
 .FileItemBox{
 
     border: white 4px solid;
     margin-bottom: 3.6%;
+    margin-left: 0.2%;
+    margin-right: 0.2%;
 
 }
 
@@ -834,10 +845,54 @@ main{
 
 .FileItemBoxIcon{
 
-    width: 27%;
+    width: 100%;
     height: 85%;
     margin: auto ;
     padding-top: 5%;
+}
+
+@media (min-width: 476px){
+    .FileItemBoxIcon{
+
+        width: 50%;
+        height: 85%;
+        margin: auto ;
+        padding-top: 1.2%;
+    }
+    
+}
+
+@media (min-width: 768px){
+    .FileItemBoxIcon{
+
+        width: 30%;
+        height: 85%;
+        margin: auto ;
+        padding-top: 3%;
+    }
+    
+
+}
+
+
+ @media(min-width: 992px){
+    .FileItemBoxIcon{
+
+        width: 27%;
+        height: 85%;
+        margin: auto ;
+        padding-top: 5%;
+    }
+}
+
+@media(min-width: 1200px){
+    .FileItemBoxIcon{
+
+        width: 27%;
+        height: 85%;
+        margin: auto ;
+        padding-top: 5%;
+    }
 }
 
 .FileItemBoxIcon button{
@@ -846,3 +901,340 @@ main{
     height: 100%;
     margin: auto auto ;
 }
+
+/* Chat Room*/
+
+.ChatRoomTitle{
+
+    display: flex;
+    width: 50%;
+    height: 5vw;
+    margin-bottom: 2%;
+}
+
+
+
+
+
+.ChatRoomTitleText{
+
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 3vw;
+    margin-left: 13%;
+    width: 50%;
+
+}
+
+
+
+.ChatRoomTitleSubtext{
+
+
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-size: 1vw;
+    text-align: center;
+    margin-left: 3%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.ChatRoomBorder{
+
+    width: 45%;
+    height:37vw;
+    margin-left: 5%;
+    border: 5px white solid;
+    margin-bottom: 2%;
+    overflow: hidden;
+
+}
+
+.InputChatBox{
+    position: relative;
+    width: 45%;
+    margin-left: 5%;
+}
+
+.message-field{
+
+    
+    width: 100%;
+
+    font-size: 1.5vw;
+    color: aqua;
+    border: 5px white solid;
+    padding-left: 1%;
+    border-radius: 12px;
+    padding-right: 30%;
+    
+}
+
+
+
+.SubmitBtn{
+
+    top:25%;
+    right: 5%;
+    position: absolute;
+    height: 50%;
+    width: 25%;
+    text-align: center;
+    line-height: 0cm;
+    font-size: 12px;
+    padding-left:0;
+    padding-right: 0;
+   
+}
+
+@media (min-width: 476px){
+    .SubmitBtn{
+
+        top:25%;
+        right: 2%;
+        position: absolute;
+        height: 50%;
+        width: 20%;
+        line-height: 0cm;
+        font-size: 20px;
+    }
+    
+    
+}
+
+
+@media (min-width: 476px){
+   
+.message-field{
+
+    
+    width: 100%;
+    
+    font-size: 1.5vw;
+    color: aqua;
+    border: 5px white solid;
+    padding-left: 1%;
+    border-radius: 12px;
+    padding-right: 23%;
+    
+}
+    
+    
+}
+
+@media (min-width: 768px){
+    .SubmitBtn{
+
+        top:25%;
+        right: 2%;
+        position: absolute;
+        height: 50%;
+        width: 20%;
+        font-size: 20px;
+        line-height: 0cm;
+    }
+    
+
+}
+
+
+ @media(min-width: 992px){
+    .SubmitBtn{
+
+        top:25%;
+        right: 2%;
+        position: absolute;
+        height: 50%;
+        width: 20%;
+        font-size: 25px;
+        line-height: 0cm;
+    }
+    
+}
+
+@media(min-width: 1200px){
+    .SubmitBtn{
+
+        top:25%;
+        right: 2%;
+        position: absolute;
+        height: 50%;
+        width: 20%;
+        line-height: 0cm;
+    }
+    
+}
+
+#message-list{
+
+    height: 100%;
+    padding:0;
+    margin-top: 3%;
+    overflow-y: scroll;
+    margin-right: 1%;
+
+     
+}
+#message-list::-webkit-scrollbar {
+
+    width: 40px;
+
+  }
+
+  #message-list::-webkit-scrollbar-button {
+
+    background: transparent;
+
+    border-radius: 4px;
+
+  }
+
+  #message-list::-webkit-scrollbar-track-piece {
+
+    background: transparent;
+
+  }
+
+  #message-list::-webkit-scrollbar-thumb {
+
+    border-radius: 4px;
+
+    background-color: rgba(0, 0, 0, 0.4);
+
+    border: 1px solid slategrey;
+
+  }
+
+  #message-list::-webkit-scrollbar-track {
+
+    box-shadow: transparent;
+
+  }
+
+
+.UserImg{
+
+
+    width: 14%;
+    height: 80%;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+.message-item{
+
+    list-style: none;
+    display: flex;
+    position: relative;
+    height: 23%;
+    padding-left: 2%;
+    border: 3px white solid;
+    padding-top: 1%;
+    margin-bottom: 3%;
+    margin-left: 2%;
+    border-radius: 12px;
+    width: 97%;
+    overflow-x: hidden;
+}   
+
+@media (min-width: 476px){
+    .message-item{
+
+        list-style: none;
+        height: 16%;
+        
+    }
+    
+}
+
+@media (min-width: 768px){
+    .message-item{
+
+        list-style: none;
+    
+    
+    }
+
+}
+
+
+ @media(min-width: 992px){
+    .message-item{
+
+        list-style: none;
+    
+    
+    }
+}
+
+@media(min-width: 1200px){
+    .message-item{
+
+        list-style: none;
+        font-size: 1.4vw;
+    
+    }
+}
+
+.chat{
+
+    padding-left: 3%;
+    font-size: 1.5vw;
+}
+
+.chatTime{
+
+   display: none;
+}
+
+@media(min-width: 992px){
+    .chatTime{
+        display:block;
+        font-size: .8vw;
+        position: absolute;
+        right: 1%;
+        bottom: 0;
+    }
+}
+
+/*
+
+@media (min-width: 476px){
+    .collapse{
+        transition: all 0.1s;
+        overflow: visible;
+        float: right;
+        width: 300%;
+    }
+    
+}
+
+@media (min-width: 768px){
+    .collapse{
+        transition: all 0.1s;
+        overflow: visible;
+        float: right;
+        width: 330%;
+    }
+
+}
+
+
+ @media(min-width: 992px){
+    .collapse{
+        transition: all 0.1s;
+        overflow: visible;
+        float: right;
+        width: 270%;
+    }
+}
+
+@media(min-width: 1200px){
+    .collapse{
+        transition: all 0.1s;
+        overflow: visible;
+        float: right;
+        width: 270%;
+    }
+}
+*/
