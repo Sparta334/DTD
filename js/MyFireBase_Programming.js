@@ -1,5 +1,4 @@
-
-
+let index ;
 $(document).ready(function () {
 
     
@@ -140,15 +139,47 @@ $(document).ready(function () {
     });
    
 
-     // 聊天室滾動
+     // 檔案區滾動
+    
+
+     index=0;
+     let IndexCount = $(".FileItemBox").length;
 
 
+     $("#controlUp").click(function (e) { 
+        e.preventDefault();
+        index-=1;
+        console.log(index);
 
+        if(index<0){
+            index=IndexCount-2;
+        }
+        let elementHieght = $(".FileItemBox").outerHeight(true);
+        console.log(elementHieght);
+        $(".Filecarousel").css("transform" , "translateY(" +(-index* elementHieght)+"px)" );
+        
+    });
+    
+    $("#controlDown").click(function (e) { 
+        e.preventDefault();
+        index+=1;
+        console.log(index);
 
+        if(index>IndexCount-2){
+            index=0;
+        }
+        let elementHieght = $(".FileItemBox").outerHeight(true);
+        console.log(elementHieght);
+        $(".Filecarousel").css("transform" , "translateY(" +(-index* elementHieght)+"px)" );
+        
+    });
+    
+     
 
 
 
 });
+
 
 function SendData( M , FireBase ){
 
