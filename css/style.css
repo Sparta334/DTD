@@ -187,8 +187,8 @@ main{
 }
 
 .Nav{
-    height: 20vh;
-    width: 18vw;
+    width: 14%;
+    height: 15%;
     top:0;
     right: 0;
     position: fixed;
@@ -200,9 +200,8 @@ main{
 
 @media (min-width: 476px){
     .Nav{
-
-        height:20vh;
-        width: 15vw;
+        width: 12%;
+        height: 15%;
         top:0%;
         right: 0%;
         position: fixed;
@@ -214,8 +213,8 @@ main{
 @media (min-width: 768px){
     .Nav{
 
-        height: 20vh;
-        width: 13vw;
+        width: 11%;
+        height: 17%;
         top:0%;
         right: 0%;
         position: fixed;
@@ -227,8 +226,8 @@ main{
 @media(min-width: 992px){
     .Nav{
 
-        height:20vh;
-        width: 10vw;
+        width: 10%;
+        height: 20%;
         top:0%;
         right: 0%;
         position: fixed;
@@ -1489,7 +1488,7 @@ main{
 .chat{
     font-family: 'Zen Maru Gothic', sans-serif;
     padding-left: 3%;
-    font-size: 0.4vw;
+    font-size:3%;
 }
 
 @media(min-width: 992px){
