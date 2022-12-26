@@ -18,12 +18,12 @@ body{
 
 main{
 
-    height:53vw;
+    height:68vw;
     padding-top: 2%;
     margin-left: 7%;
 }
 
-@media (min-width:376){
+@media (min-width:565px){
     
     main{
 
@@ -477,17 +477,30 @@ main{
 
 /* Arcticle */
 
-
-
 .typer-content{
 
     height: fit-content;
     width:fit-content;
     font-family: Lucida Console;
-    font-size: 2.6vw;
-    margin-left: 5%;
+    font-size: 1rem;
 
 }
+
+@media ( min-width: 565px ) {
+    
+    .typer-content{
+
+        height: fit-content;
+        width:fit-content;
+        font-family: Lucida Console;
+        font-size: 2.6vw;
+        margin-left: 5%;
+    
+    }
+    
+    
+}
+
 
 
 /*
