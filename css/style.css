@@ -8,11 +8,19 @@ img{
     vertical-align: top;
 }
 
+body{
+
+    background-image: linear-gradient(to top , #397f86, #1c293c );
+    color: white;
+
+}
+
 
 main{
 
     height:53vw;
     padding-top: 2%;
+    margin-left: 7%;
 }
 
 @media (min-width:376){
@@ -54,11 +62,12 @@ main{
      color:black;
      overflow: hidden;
      border-right: .15em solid lightblue;
+     color: white;
      white-space: nowrap;
      width: 0%;
      line-height:normal;
      animation: 
-     typing 1s steps(19, end) forwards,
+     typing 0.7s steps(19, end) forwards,
      blink .8s infinite;
 }
 
@@ -81,10 +90,6 @@ main{
     height: 87%;
 }
 
-.container-fluid{
-
-    background-color: blueviolet;
-}
 
 /*header*/
 
@@ -154,29 +159,27 @@ main{
 .NavBtnSize{
 
   margin-top: 10%;
-  margin-left: 30%;
+  margin-left: 15%;
   border: none;
-  color: white;
   text-decoration: none;
   height: 10vh;
   width: 70%;
   position: absolute;
-  z-index: 2;
+  z-index: 1;
 
 }
 
 @media (min-width: 476px){
     .NavBtnSize{
 
-        margin-top: 25%;
-        margin-left: 5%;
+        margin-top: 15%;
+        margin-left: 15%;
         border: none;
-        color: white;
         text-decoration: none;
         height: 10vh;
         width: 70%;
         position: absolute;
-        z-index: 2;
+        z-index: 1;
       
       }
       
@@ -184,19 +187,22 @@ main{
 }
 
 .Nav{
-    height: 28vh;
-    width: 30vw;
+    height: 20vh;
+    width: 18vw;
     top:0;
     right: 0;
     position: fixed;
-    z-index: 4;
+    z-index: 1;
+    background-color: wheat;
+    border-bottom-left-radius: 300%;
+    border-bottom-right-radius: 2%;
 }
 
 @media (min-width: 476px){
     .Nav{
 
-        height:28vh;
-        width: 18vw;
+        height:20vh;
+        width: 15vw;
         top:0%;
         right: 0%;
         position: fixed;
@@ -208,7 +214,7 @@ main{
 @media (min-width: 768px){
     .Nav{
 
-        height: 28vh;
+        height: 20vh;
         width: 13vw;
         top:0%;
         right: 0%;
@@ -221,8 +227,8 @@ main{
 @media(min-width: 992px){
     .Nav{
 
-        height: 28vh;
-        width: 8vw;
+        height:20vh;
+        width: 10vw;
         top:0%;
         right: 0%;
         position: fixed;
@@ -240,7 +246,7 @@ main{
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
     transform: rotate(0deg);
-        -webkit-transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
     -moz-transition: .5s ease-in-out;
      -o-transition: .5s ease-in-out;
      transition: .5s ease-in-out;
@@ -248,6 +254,7 @@ main{
     position: relative;
     float: none;
     
+
 }
 
 .navbar-toggler-icon span{
@@ -255,7 +262,7 @@ main{
     position: absolute;
     height: 10%;
     width: 100%;
-    background: #d3531a;
+    background-color: #1c293c;
     border-radius: 9px;
     opacity: 1;
     left: 0;
@@ -267,9 +274,12 @@ main{
     -moz-transition: .25s ease-in-out;
     -o-transition: .25s ease-in-out;
     transition: .25s ease-in-out;
+
   }
+  
 
   .navbar-toggler-icon span:nth-child(1) {
+    
     top: 10%;
   }
   
@@ -285,6 +295,7 @@ main{
     top: 18px;
     width: 0%;
     left: 50%;
+    background-color: white;
   }
   
   .navbar-toggler-icon.open span:nth-child(2) {
@@ -292,6 +303,7 @@ main{
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
+    background-color: white;
   }
   
   .navbar-toggler-icon.open span:nth-child(3) {
@@ -299,12 +311,14 @@ main{
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
+    background-color: white;
   }
   
   .navbar-toggler-icon.open span:nth-child(4) {
     top: 18px;
     width: 0%;
     left: 50%;
+    background-color: white;
   }
 
 .collapse{
@@ -312,6 +326,7 @@ main{
     overflow: visible;
     float: right;
     width: 200%;
+    
 }
 
 @media (min-width: 476px){
@@ -588,6 +603,7 @@ main{
    
     width: 100%;
     height: 100%;
+    
  }
 
  .sujectText{
@@ -595,7 +611,7 @@ main{
     padding-top: 5%;
     text-align: center;
     font-size: .9rem;
-    font-weight: 600;
+    font-weight: 500;
 
 }
 
@@ -606,7 +622,7 @@ main{
         padding-top: 6%;
         text-align: center;
         font-size: 1.7rem;
-        font-weight: 600;
+        font-weight: 500;
 
     }
     
@@ -617,7 +633,7 @@ main{
         padding-top: 6%;
         text-align: center;
         font-size: 2.3rem;
-        font-weight: 600;
+        font-weight: 500;
 
     }
 
@@ -629,7 +645,7 @@ main{
         padding-top: 10%;
         text-align: center;
         font-size: 2.6rem;
-        font-weight: 600;
+        font-weight:500;
 
     }
 }
@@ -703,11 +719,18 @@ main{
     font-size: 3vw;
     border: white 2px solid;
     text-decoration: none;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    color: white;
 
 }
 
+#More:hover{
+
+    color:wheat;
+}
+
 .footer{
-    background-color: #d3531a;
+   
     margin-top:10%;
     width: 100%;
 
@@ -722,22 +745,23 @@ main{
 }
 .footerBtnImg{
 
-    height:100%;
+    height:80%;
     width: 100%;
 }
 
 .footerBtn{
 
-    height: 40%;
+    height: 30%;
     margin-top: auto;
     margin-bottom: auto;
-    padding-left: 7%;
+    padding-left: 10%;
 }
 .footerBtnList{
     height: 80%;
     width: 100%;
     display: flex;
 }
+
 
 
 
@@ -889,7 +913,7 @@ main{
 .controlItemBoxTitleItemBox{
     width: 49.565%;
     height:100%;
-
+    color: black;
     padding-left: 15px;
     padding-right: 15px;
 
@@ -1401,10 +1425,9 @@ main{
 .UserImg{
 
 
-    width: 12%;
-    height: 80%;
-    margin-top: auto;
-    margin-bottom: auto;
+    width: 9%;
+    height:90%;
+    
 
 }
 

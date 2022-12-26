@@ -33,7 +33,7 @@ setInterval(function () {
     }
 
 
-}, 1500);
+},1000);
 
 setInterval(function () {
 
