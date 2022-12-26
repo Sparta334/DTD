@@ -1501,7 +1501,7 @@ main{
 .chat{
     font-family: 'Zen Maru Gothic', sans-serif;
     padding-left: 3%;
-    font-size: 100%;
+    font-size: 85%;
 }
 
 @media(min-width: 992px){
