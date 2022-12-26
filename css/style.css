@@ -1451,7 +1451,6 @@ main{
     height: 23%;
     padding-left: 2%;
     border: 3px white solid;
-    padding-top: 1%;
     margin-bottom: 3%;
     margin-left: 2%;
     border-radius: 12px;
@@ -1501,7 +1500,7 @@ main{
 .chat{
     font-family: 'Zen Maru Gothic', sans-serif;
     padding-left: 3%;
-    font-size: 85%;
+    font-size: 68%;
 }
 
 @media(min-width: 992px){
