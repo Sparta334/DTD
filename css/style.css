@@ -729,7 +729,7 @@ main{
     margin-left: auto;
     margin-right: auto;
     margin-top: 3%;
-    font-size: 1%;
+    font-size: 10%;
 
  }
 
@@ -962,7 +962,7 @@ main{
 .footertext{
 
     font-size:100%;
-    width: 40%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
