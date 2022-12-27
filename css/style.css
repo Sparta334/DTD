@@ -35,8 +35,6 @@ main{
 
 
 
-
-
 /*typer Effect*/
 
 @keyframes typing {
@@ -54,8 +52,29 @@ main{
     to { border-color: lightblue; }
 }
 
+@keyframes SubjectImg {
+    0%{ 
+        opacity: 1;
+        transform:scale(1);
+    }
+    100% 
+    { 
+        transform:scale(0.6);
+        opacity: 0.4;
+        
+    }
+}
 
-
+@keyframes SubjectImg2 {
+    0%{ 
+        opacity: 0;
+       
+    }
+    100% 
+    { 
+        opacity: 0.9;
+    }
+}
 
 .typed-out{
      display:block;
@@ -116,7 +135,15 @@ main{
     height: 55%;
     width: 55%;
     margin-bottom: 5%;
+    transform: scale(1);
+    transition-duration: 0.2s;
 
+}
+
+.Logo:hover{
+
+    transform: scale(1.2);
+    transition-duration: 0.2s;
 }
 
 @media (min-width: 476px){
@@ -252,8 +279,16 @@ main{
     cursor: pointer;
     position: relative;
     float: none;
-    
+    transform: scale(1);
+    transition-duration: 0.2s;
 
+}
+
+.navbar-toggler-icon:hover{
+
+
+    transform: scale(1.2);
+    transition-duration: 0.2s;
 }
 
 .navbar-toggler-icon span{
@@ -610,13 +645,117 @@ main{
 
 }
 
+
+
+.Subject:hover .sujectImg{
+
+    animation: SubjectImg 0.2s forwards;
+    
+    
+}
+
+.Subject:hover .sujectImg2{
+
+    animation: SubjectImg2 0.2s forwards;
+    
+}
  .sujectImg{
 
-   
+    
     width: 100%;
     height: 100%;
     
+    
  }
+
+.sujectImgBox{
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+ .sujectImg2{
+    position: absolute;
+    background-color: aqua;
+    width: 100%;
+    height:96%;
+    z-index: -2;
+    opacity: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2%;
+    color: black;
+
+ }
+
+ .sujectImg2Text{
+    width: 80%;
+    height:80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    font-size: 1%;
+
+ }
+
+ @media (min-width: 476px){
+
+    .sujectImg2Text{
+        width: 80%;
+        height:80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3%;
+        font-size: 15%;
+    
+     }
+    
+}
+
+@media (min-width: 768px){
+
+    .sujectImg2Text{
+        width: 80%;
+        height:80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3%;
+        font-size: 110%;
+    
+     }
+
+}
+
+
+ @media(min-width: 992px){
+
+    .sujectImg2Text{
+        width: 80%;
+        height:80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3%;
+        font-size: 130%;
+    
+     }
+}
+
+@media(min-width: 1200px){
+   
+ .sujectImg2Text{
+    width: 80%;
+    height:80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    font-size: 150%;
+
+ }
+}
+
 
  .sujectText{
 
@@ -759,6 +898,8 @@ main{
 
     height:80%;
     width: 100%;
+    transform: scale(1);
+    transition-duration: 0.2s;
 }
 
 .footerBtn{
@@ -767,7 +908,17 @@ main{
     margin-top: auto;
     margin-bottom: auto;
     padding-left: 10%;
+    
 }
+
+
+.footerBtnImg:hover{
+
+    transform: scale(1.2);
+    transition-duration: 0.2s;
+}
+
+
 .footerBtnList{
     height: 80%;
     width: 100%;
@@ -776,6 +927,15 @@ main{
 
 
 
+.footertext{
+
+    font-size:100%;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
 
 /* Info.html */
 
@@ -882,8 +1042,18 @@ main{
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
+    transform: scale(1);
+    transition-duration: 0.2s;
+
 }
 
+
+.controlItemBoxTitleImg:hover{
+
+    transform: scale(1.2);
+    transition-duration: 0.2s;
+    
+}
 
 .controlItemBoxTitleImg img{
 
@@ -1096,6 +1266,16 @@ main{
     border-color:transparent;
     border-width: 0px;
     background-color: transparent;
+    transform: scale(1);
+    transition-duration: 0.2s;
+    
+}
+
+
+.FileBtn:hover{
+
+   transform: scale(1.2);
+   transition-duration: 0.2s;
     
 }
 

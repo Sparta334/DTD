@@ -12,8 +12,12 @@ $(document).ready(function () {
 
     console.log(StepWidth.length);
 
-});
 
+
+   
+
+
+});
 
 
 setInterval(function () {
