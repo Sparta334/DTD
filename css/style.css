@@ -189,7 +189,7 @@ main{
   margin-left: 15%;
   border: none;
   text-decoration: none;
-  height: 10vh;
+  height: 50%;
   width: 70%;
   position: absolute;
   z-index: 1;
@@ -203,7 +203,7 @@ main{
         margin-left: 15%;
         border: none;
         text-decoration: none;
-        height: 10vh;
+        height: 50%;
         width: 70%;
         position: absolute;
         z-index: 1;
@@ -213,9 +213,41 @@ main{
     
 }
 
+@media (min-width: 768px){
+    .NavBtnSize{
+
+        margin-top: 15%;
+        margin-left: 15%;
+        border: none;
+        text-decoration: none;
+        height: 50%;
+        width: 70%;
+        position: absolute;
+        z-index: 1;
+      
+      }
+}
+
+
+@media(min-width: 992px){
+    .NavBtnSize{
+
+        margin-top: 15%;
+        margin-left: 15%;
+        border: none;
+        text-decoration: none;
+        height: 50%;
+        width: 70%;
+        position: absolute;
+        z-index: 1;
+      
+      }
+}
+
+
 .Nav{
     width: 20%;
-    height: 19%;
+    height: 10%;
     top:0;
     right: 0;
     position: fixed;
@@ -228,7 +260,7 @@ main{
 @media (min-width: 476px){
     .Nav{
         width: 20%;
-        height: 19%;
+        height: 15%;
         top:0%;
         right: 0%;
         position: fixed;

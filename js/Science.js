@@ -1,13 +1,4 @@
-let index ;
-
-
-$(document).resize(function () { 
-    
-    index = 0;
-    $(".Filecarousel").css("transform" , "translateY(" +(-index* elementHieght)+"px)" );
-
-
-});
+let index;
 
 $(document).ready(function () {
 
@@ -43,7 +34,7 @@ $(document).ready(function () {
         $(this).html(`<span class="spinner-border" style="width: 1.5vw; height: 1.5vw;"  ></span>`);
 
         let Path = $(this).attr("id");
-        let FullPath = "Computer_Progrmming/"+Path+".zip";
+        let FullPath = "Introduction_to_Computers/"+Path+".zip";
 
         
         dbStorage.ref(FullPath).getDownloadURL()
@@ -94,7 +85,7 @@ $(document).ready(function () {
 
     // 聊天室後臺擷取
     let ChatRoomMessage = db.collection("chatRoom").doc("Room1");
-    let messageCollection = ChatRoomMessage.collection("Message");
+    let messageCollection = ChatRoomMessage.collection("MessageComputerScience");
     const $messageList = $("#message-list");
     const $messageField = $("#message-field");
 
@@ -131,7 +122,7 @@ $(document).ready(function () {
 
             let messageItem = `
             <li class="message-item">
-                <img class ="UserImg" src="./@Resoure/Computer _Programming/Account.webp" >
+            <img class ="UserImg" src="./@Resoure/Computer _Programming/Account.webp" >
                 <div class="chat">${message}</div>
                 <div class="chatTime">${mesTime}</div>
 
@@ -149,8 +140,7 @@ $(document).ready(function () {
     });
    
 
-     // 檔案區滾動
-    
+     // 檔案滾動
 
      index=0;
      let IndexCount = $(".FileItemBox").length;
@@ -188,15 +178,16 @@ $(document).ready(function () {
 
 
 
-});
 
+
+
+});
 
 function SendData( M , FireBase ){
 
     let message = M.val();
     if(message[0] != " " && message != ""){
-
-        if(message.length <=34 && message.length >= 1){
+        if(message.length <=34 &&message.length >= 1 ){
             FireBase.add({
 
         
@@ -206,7 +197,6 @@ function SendData( M , FireBase ){
         
             });
         }
-
       
     }
    

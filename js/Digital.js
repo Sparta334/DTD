@@ -73,7 +73,7 @@ $(document).ready(function () {
          .catch(function(error){
 
 
-            $(".FileBtn").html(`<img src="./@Resoure/universal/download.webp" height="100%" width="100%" alt="">`);
+            $(".FileBtn").html(`<img src="./@Resoure/universal/download.webpGMP" height="100%" width="100%" alt="">`);
             alert("No File");
 
 
@@ -152,7 +152,7 @@ $(document).ready(function () {
         console.log(index);
 
         if(index<0){
-            index=IndexCount-2;
+            index=IndexCount-3;
         }
         let elementHieght = $(".FileItemBox").outerHeight(true);
         console.log(elementHieght);
@@ -165,7 +165,7 @@ $(document).ready(function () {
         index+=1;
         console.log(index);
 
-        if(index>IndexCount-2){
+        if(index>IndexCount-3){
             index=0;
         }
         let elementHieght = $(".FileItemBox").outerHeight(true);
@@ -187,10 +187,7 @@ function SendData( M , FireBase ){
 
     let message = M.val();
     if(message[0] != " " && message != ""){
-        if(message.length >=34 ){
-            alert("屁話一堆! 字數過多");
-        }
-        else{
+        if(message.length <=34 &&message.length >= 1 ){
             FireBase.add({
 
         
