@@ -695,7 +695,7 @@ main{
     background-image:linear-gradient(to top, aqua , aqua);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-position: -400px 0;
+    background-position: -300px 0;
     transition-property:background-position ; 
     transition-duration: .5s;
 
@@ -960,6 +960,7 @@ main{
 
     font-family: 'Zen Maru Gothic', sans-serif;
     color: white;
+    border-radius: 10px;
 
 }
 

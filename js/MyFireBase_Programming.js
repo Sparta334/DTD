@@ -162,7 +162,7 @@ $(document).ready(function () {
         console.log(index);
 
         if(index<0){
-            index=IndexCount-3;
+            index=IndexCount-4;
         }
         let elementHieght = $(".FileItemBox").outerHeight(true);
         console.log(elementHieght);
@@ -175,7 +175,7 @@ $(document).ready(function () {
         index+=1;
         console.log(index);
 
-        if(index>IndexCount-3){
+        if(index>IndexCount-4){
             index=0;
         }
         let elementHieght = $(".FileItemBox").outerHeight(true);
