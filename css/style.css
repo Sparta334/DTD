@@ -677,7 +677,62 @@ main{
 
 }
 
+.SubjectBtn{
 
+    position: relative;
+}
+
+.SubjectBtnItem{
+    position: absolute;
+    width: 30%;
+    height: 13%;
+    border: aqua 2px solid;
+    border-radius: 10px;
+    color: white;
+    top:80%;
+    right: 35%;
+    cursor: pointer;
+    background-image:linear-gradient(to top, aqua , aqua);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: -400px 0;
+    transition-property:background-position ; 
+    transition-duration: .5s;
+
+}
+
+.SubjectBtnItemA{
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 100%;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    color:white;
+    font-size: 2vw;
+    margin-top: auto;
+    margin-bottom: auto;
+    line-height: normal;
+
+   
+}
+
+.SubjectBtnItem:hover{
+    
+    background-position: 0px 0%;
+    background-size: 100% 100%;
+    transition-property:background-position ; 
+    transition-duration: .5s;
+}
+
+.SubjectBtnItem:hover .SubjectBtnItemA {
+   color:#1c293c;
+   text-decoration: none;
+   cursor: pointer;
+   
+
+}
 
 .Subject:hover .sujectImg{
 
@@ -902,6 +957,7 @@ main{
     font-size: 3vw;
     border: white 2px solid;
     text-decoration: none;
+
     font-family: 'Zen Maru Gothic', sans-serif;
     color: white;
 
@@ -1011,6 +1067,21 @@ main{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr ;
     
+
+}
+
+.Subjectbox{
+
+    transform: scale(1);
+    transition-duration: 0.2s;
+
+
+}
+
+.Subjectbox:hover{
+
+    transform: scale(1.1);
+    transition-duration: 0.2s;
 
 }
 
