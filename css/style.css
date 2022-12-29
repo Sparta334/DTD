@@ -964,13 +964,29 @@ main{
     height:100%;
     margin-left: auto;
     margin-right: auto;
-    font-size:13%;
+    font-size:30%;
     font-family: 'Zen Maru Gothic', sans-serif;
     font-weight: 500;
 
  }
 
- 
+
+ @media handheld{
+
+    .sujectImg2Text{
+        width: 80%;
+        height:100%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size:200%;
+        font-family: 'Zen Maru Gothic', sans-serif;
+        font-weight: 500;
+    
+     }
+    
+
+
+ }
  @media (min-width: 450px){
 
     .sujectImg2Text{
@@ -988,11 +1004,11 @@ main{
  @media (min-width: 556px){
 
     .sujectImg2Text{
-        width: 80%;
+        width: 90%;
         height:100%;
         margin-left: auto;
         margin-right: auto;
-        font-size: 30%;
+        font-size:10%;
         padding-top: 3%;
     
      }
