@@ -40,11 +40,58 @@ main{
 
 .SubLogo{
     position: absolute;
-    width: 15%;
+    width: 25%;
     height: 30%;
     top:56%;
     right: 8%;
 
+}
+
+@media (min-width: 476px){
+    .SubLogo{
+        position: absolute;
+        width: 21%;
+        height: 35%;
+        top:56%;
+        right: 8%;
+    
+    }
+    
+}
+
+@media (min-width: 768px){
+    .SubLogo{
+        position: absolute;
+        width: 15%;
+        height: 30%;
+        top:56%;
+        right: 8%;
+    
+    }
+
+}
+
+
+ @media(min-width: 992px){
+    .SubLogo{
+        position: absolute;
+        width: 15%;
+        height: 30%;
+        top:56%;
+        right: 8%;
+    
+    }
+}
+
+@media(min-width: 1200px){
+    .SubLogo{
+        position: absolute;
+        width: 15%;
+        height: 30%;
+        top:56%;
+        right: 8%;
+    
+    }
 }
 
 /*typer Effect*/
