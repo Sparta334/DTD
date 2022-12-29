@@ -971,14 +971,14 @@ main{
  }
 
 
- @media handheld{
+ @media only handheld{
 
     .sujectImg2Text{
         width: 80%;
         height:100%;
         margin-left: auto;
         margin-right: auto;
-        font-size:100px;
+        font-size:200px;
         font-family: 'Zen Maru Gothic', sans-serif;
         font-weight: 500;
     
