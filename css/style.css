@@ -17,23 +17,35 @@ body{
 
 
 main{
-
+    position: relative;
     height:68vw;
     padding-top: 2%;
-    margin-left: 7%;
+    margin-left: 5.5%;
 }
 
 @media (min-width:565px){
     
     main{
-
+        position: relative;
         height:40vw;
         padding-top: 2%;
     }
 }
 
+.Content{
+
+    display: flex;
+}
 
 
+.SubLogo{
+    position: absolute;
+    width: 15%;
+    height: 30%;
+    top:56%;
+    right: 8%;
+
+}
 
 /*typer Effect*/
 
@@ -252,7 +264,7 @@ main{
     right: 0;
     position: fixed;
     z-index: 1;
-    background-color: wheat;
+    background-color: white;
     border-bottom-left-radius: 300%;
     border-bottom-right-radius: 2%;
 }
@@ -361,7 +373,6 @@ main{
     top: 18px;
     width: 0%;
     left: 50%;
-    background-color: white;
   }
   
   .navbar-toggler-icon.open span:nth-child(2) {
@@ -369,7 +380,6 @@ main{
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
-    background-color: white;
   }
   
   .navbar-toggler-icon.open span:nth-child(3) {
@@ -377,21 +387,20 @@ main{
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    background-color: white;
   }
   
   .navbar-toggler-icon.open span:nth-child(4) {
     top: 18px;
     width: 0%;
     left: 50%;
-    background-color: white;
   }
 
 .collapse{
     transition: all 0.1s;
     overflow: visible;
     float: right;
-    width: 200%;
+    width: 500%;
+    height: 100%;
     
 }
 
@@ -400,7 +409,8 @@ main{
         transition: all 0.1s;
         overflow: visible;
         float: right;
-        width: 300%;
+        width: 210%;
+        
     }
     
 }
@@ -410,7 +420,7 @@ main{
         transition: all 0.1s;
         overflow: visible;
         float: right;
-        width: 330%;
+        width: 210%;
     }
 
 }
@@ -421,7 +431,7 @@ main{
         transition: all 0.1s;
         overflow: visible;
         float: right;
-        width: 270%;
+        width: 210%;
     }
 }
 
@@ -430,7 +440,8 @@ main{
         transition: all 0.1s;
         overflow: visible;
         float: right;
-        width: 270%;
+        width: 210%;
+        height: 100%;
     }
 }
 
@@ -456,16 +467,34 @@ main{
 
     text-align: center;
     padding-left: 16px;
+    text-align: start;
 
 }
+
+
+
 .MainMeunTitle{
 
     padding-top: 20%;
     font-family: 'Zen Maru Gothic', sans-serif;
     font-size: 1.0rem;
-
+    color: #1c293c;
     padding-bottom: 5%;
 
+}
+
+.MainMeunTitle a{
+
+    text-decoration: none;
+    color: #1c293c;
+
+}
+
+.MainMeunTitle a:hover{
+
+    text-decoration: none;
+    color: aqua;
+    
 }
 
 @media ( min-width: 467px){
@@ -474,7 +503,7 @@ main{
 
         padding-top: 20%;
         font-family: 'Zen Maru Gothic', sans-serif;
-        font-size: 1.6rem;
+        font-size: 1.9rem;
 
         padding-bottom: 5%;
 
@@ -491,7 +520,7 @@ main{
 
         padding-top: 20%;
         font-family: 'Zen Maru Gothic', sans-serif;
-        font-size: 1.6rem;
+        font-size: 1.9rem;
 
         padding-bottom: 5%;
 
@@ -506,7 +535,7 @@ main{
 
         padding-top: 20%;
         font-family: 'Zen Maru Gothic', sans-serif;
-        font-size: 1.6rem;
+        font-size: 1.9rem;
         padding-bottom: 5%;
 
         
@@ -605,25 +634,28 @@ main{
 
 .lable{
 
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-family: 'Zen Maru Gothic', sans-serif;
     margin-top: 2%;
 
     text-align: center;
-    width: 16%;
+    width: 10%;
     border : 3px white solid;
+    background-color: white;
+    color: #1c293c;
+    border-radius: 7px;
 
  }
 
  @media (min-width: 476px){
     .lable{
 
-        font-size: 2.5rem;
+        font-size: 1.8rem;
         font-family: 'Zen Maru Gothic', sans-serif;
         margin-top: 2%;
     
         text-align: center;
-        width: 16%;
+        width: 10%;
         border : 3px white solid;
     
      }
@@ -634,12 +666,12 @@ main{
 
     .lable{
 
-        font-size: 2.7rem;
+        font-size: 1.9rem;
         font-family: 'Zen Maru Gothic', sans-serif;
         margin-top: 2%;
     
         text-align: center;
-        width: 16%;
+        width: 10%;
         border : 3px white solid;
     
      }
@@ -650,12 +682,12 @@ main{
 
     .lable{
 
-        font-size: 3.1rem;
+        font-size: 2rem;
         font-family: 'Zen Maru Gothic', sans-serif;
         margin-top: 2%;
     
         text-align: center;
-        width: 16%;
+        width: 10%;
         border : 3px white solid;
     
      }
@@ -957,16 +989,16 @@ main{
     font-size: 3vw;
     border: white 2px solid;
     text-decoration: none;
-
     font-family: 'Zen Maru Gothic', sans-serif;
-    color: white;
+    color: #1c293c;
+    background-color: white;
     border-radius: 10px;
 
 }
 
 #More:hover{
 
-    color:wheat;
+    color:aqua;
 }
 
 .footer{
@@ -975,6 +1007,69 @@ main{
     width: 100%;
 
 }
+
+.footerSubtext{
+
+    text-align: center;
+    width:100%;
+    height: 20%;
+    margin-top: -10% ;
+    font-size: 10%;
+
+}
+
+@media (min-width: 476px){
+    .footerSubtext{
+
+        text-align: center;
+        width:100%;
+        height: 20%;
+        margin-top: -10% ;
+        font-size: 50%;
+        padding-right: 28%;
+    }
+    
+}
+
+@media (min-width: 768px){
+    .footerSubtext{
+
+        text-align: center;
+        width:100%;
+        height: 20%;
+        margin-top: -10% ;
+        font-size: 100%;
+        padding-right: 26%;
+    }
+
+}
+
+
+ @media(min-width: 992px){
+    .footerSubtext{
+
+        width:100%;
+        height: 20%;
+        margin-top: -10% ;
+        font-size: 140%;
+        padding-right: 24%;
+    
+    }
+}
+
+@media(min-width: 1200px){
+    .footerSubtext{
+
+        width:100%;
+        height: 20%;
+        margin-top: -10% ;
+        font-size: 200%;
+        padding-right: 22%;
+    
+    }
+}
+
+
 
 .footerImg{
 
@@ -1032,7 +1127,7 @@ main{
 
     margin-top: 2%;
     height: 30vw;
-    width: 95%;
+    width: 88%;
     margin-right: auto;
     margin-left: auto;
 
@@ -1211,7 +1306,7 @@ main{
 
     width:100%;
     height: 106%;
-    background-color: wheat;
+    background-color:white;
     margin-bottom: auto;
     margin-top: auto;
     margin-left: auto;
@@ -1234,7 +1329,7 @@ main{
 
         width: 44%;
         height: 80%;
-        background-color: wheat;
+       
         margin-bottom: auto;
         margin-top: auto;
         margin-left: auto;
@@ -1391,6 +1486,7 @@ main{
     margin-bottom: 3.6%;
     margin-left: 0.2%;
     margin-right: 0.2%;
+    
 
 }
 
@@ -1551,6 +1647,7 @@ main{
     border: 5px white solid;
     margin-bottom: 2%;
     overflow: hidden;
+    color: #1c293c;
 
 }
 
@@ -1562,11 +1659,11 @@ main{
 
 .message-field{
 
-    
+    background-color: white;
     width: 100%;
 
     font-size: 1.5vw;
-    color: aqua;
+    color: #1c293c;
     border: 5px white solid;
     padding-left: 1%;
     border-radius: 12px;
@@ -1615,8 +1712,9 @@ main{
     width: 100%;
     
     font-size: 1.5vw;
-    color: aqua;
+    color: #1c293c;
     border: 5px white solid;
+    
     padding-left: 1%;
     border-radius: 12px;
     padding-right: 23%;
@@ -1735,6 +1833,7 @@ main{
     height: 23%;
     padding-left: 2%;
     border: 3px white solid;
+    background-color: white;
     margin-bottom: 3%;
     margin-left: 2%;
     border-radius: 12px;
