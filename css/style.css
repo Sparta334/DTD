@@ -978,7 +978,7 @@ main{
         height:100%;
         margin-left: auto;
         margin-right: auto;
-        font-size:200px;
+        font-size:100%;
         font-family: 'Zen Maru Gothic', sans-serif;
         font-weight: 500;
     
@@ -1186,6 +1186,7 @@ main{
    
     margin-top:10%;
     width: 100%;
+    height: auto;
 
 }
 
@@ -1196,7 +1197,6 @@ main{
     margin-top: -10% ;
     font-size: 50%;
     padding-right: 19%;
-    margin-right: 5%;
 
 }
 
@@ -1344,7 +1344,7 @@ main{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    
+    height: auto;
 
 }
 
@@ -1355,7 +1355,7 @@ main{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr ;
-        
+        height: auto;
     
     }
 }
@@ -1364,6 +1364,7 @@ main{
 
 
     position: relative;
+    height: 100%;
 
 }
 
