@@ -957,7 +957,22 @@ main{
  }
  
 
+ @media handheld{
 
+    .sujectImg2Text{
+        width: 80%;
+        height:100%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size:300%;
+        font-family: 'Zen Maru Gothic', sans-serif;
+        font-weight: 500;
+    
+     }
+    
+
+
+ }
 
  .sujectImg2Text{
     width: 80%;
@@ -971,22 +986,7 @@ main{
  }
 
 
- @media only handheld{
-
-    .sujectImg2Text{
-        width: 80%;
-        height:100%;
-        margin-left: auto;
-        margin-right: auto;
-        font-size:100%;
-        font-family: 'Zen Maru Gothic', sans-serif;
-        font-weight: 500;
-    
-     }
-    
-
-
- }
+ 
  @media (min-width: 450px){
 
     .sujectImg2Text{
