@@ -420,7 +420,7 @@ main{
         transition: all 0.1s;
         overflow: visible;
         float: right;
-        width: 210%;
+        width: 230%;
     }
 
 }
@@ -431,7 +431,7 @@ main{
         transition: all 0.1s;
         overflow: visible;
         float: right;
-        width: 210%;
+        width: 230%;
     }
 }
 
@@ -440,7 +440,7 @@ main{
         transition: all 0.1s;
         overflow: visible;
         float: right;
-        width: 210%;
+        width: 230%;
         height: 100%;
     }
 }
@@ -463,12 +463,29 @@ main{
 }
 
 
+#About{
+
+    border: #1c293c 2px solid;
+    height: 50%;
+    margin-top: 80%;
+}
+
 .MainMeun{
 
-    text-align: center;
     padding-left: 16px;
     text-align: start;
 
+}
+
+@media (min-width: 476px){
+    .MainMeun{
+
+        text-align: start;
+        padding-left: 16px;
+        height: 1000%;
+    
+    }
+    
 }
 
 
@@ -716,13 +733,13 @@ main{
 
 .SubjectBtnItem{
     position: absolute;
-    width: 30%;
-    height: 13%;
+    width: 42%;
+    height: 20%;
     border: aqua 2px solid;
     border-radius: 10px;
     color: white;
-    top:80%;
-    right: 35%;
+    top:75%;
+    right: 30%;
     cursor: pointer;
     background-image:linear-gradient(to top, aqua , aqua);
     background-size: 100% 100%;
@@ -731,6 +748,97 @@ main{
     transition-property:background-position ; 
     transition-duration: .5s;
 
+}
+
+@media (min-width: 476px){
+    .SubjectBtnItem{
+        position: absolute;
+        width: 42%;
+        height: 14%;
+        border: aqua 2px solid;
+        border-radius: 10px;
+        color: white;
+        top:80%;
+        right: 30%;
+        cursor: pointer;
+        background-image:linear-gradient(to top, aqua , aqua);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: -300px 0;
+        transition-property:background-position ; 
+        transition-duration: .5s;
+    
+    }
+    
+    
+}
+
+@media (min-width: 768px){
+    .SubjectBtnItem{
+        position: absolute;
+        width: 34%;
+        height: 15%;
+        border: aqua 2px solid;
+        border-radius: 10px;
+        color: white;
+        top:80%;
+        right: 35%;
+        cursor: pointer;
+        background-image:linear-gradient(to top, aqua , aqua);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: -300px 0;
+        transition-property:background-position ; 
+        transition-duration: .5s;
+    
+    }
+    
+
+}
+
+
+ @media(min-width: 992px){
+    .SubjectBtnItem{
+        position: absolute;
+        width: 34%;
+        height: 15%;
+        border: aqua 2px solid;
+        border-radius: 10px;
+        color: white;
+        top:80%;
+        right: 31%;
+        cursor: pointer;
+        background-image:linear-gradient(to top, aqua , aqua);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: -300px 0;
+        transition-property:background-position ; 
+        transition-duration: .5s;
+    
+    }
+    
+}
+
+@media(min-width: 1200px){
+    .SubjectBtnItem{
+        position: absolute;
+        width: 30%;
+        height: 13%;
+        border: aqua 2px solid;
+        border-radius: 10px;
+        color: white;
+        top:80%;
+        right: 35%;
+        cursor: pointer;
+        background-image:linear-gradient(to top, aqua , aqua);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: -300px 0;
+        transition-property:background-position ; 
+        transition-duration: .5s;
+    
+    }
+    
 }
 
 .SubjectBtnItemA{
@@ -750,6 +858,7 @@ main{
    
 }
 
+
 .SubjectBtnItem:hover{
     
     background-position: 0px 0%;
@@ -766,18 +875,7 @@ main{
 
 }
 
-.Subject:hover .sujectImg{
 
-    animation: SubjectImg 0.2s forwards;
-    
-    
-}
-
-.Subject:hover .sujectImg2{
-
-    animation: SubjectImg2 0.2s forwards;
-    
-}
  .sujectImg{
 
     
@@ -789,46 +887,66 @@ main{
 
 .sujectImgBox{
 
-    position: relative;
-    width: 100%;
+    position: absolute;
+    opacity: 0;
+    z-index: 0;
+    width: 99%;
     height: 100%;
+    margin-right: auto;
+    margin-left: 1%;
 }
-
 
 
  .sujectImg2{
     position: absolute;
     background-color: aqua;
     width: 100%;
-    height:96%;
-    z-index: -2;
-    opacity: 0;
+    height:100%;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 2%;
     color: black;
+    border-radius: 4%;
 
  }
+ 
+
+
 
  .sujectImg2Text{
     width: 80%;
-    height:80%;
+    height:100%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 3%;
-    font-size: 15%;
+    font-size:13%;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    font-weight: 500;
 
  }
 
- @media (min-width: 476px){
+ 
+ @media (min-width: 450px){
 
     .sujectImg2Text{
         width: 80%;
-        height:80%;
+        height:100%;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 3%;
-        font-size: 15%;
+        font-size: 90%;
+        padding-top: 3%;
+    
+     }
+    
+}
+
+ @media (min-width: 556px){
+
+    .sujectImg2Text{
+        width: 80%;
+        height:100%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 30%;
+        padding-top: 3%;
     
      }
     
@@ -841,8 +959,8 @@ main{
         height:80%;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 3%;
         font-size: 110%;
+        padding-top: 3%;
     
      }
 
@@ -853,11 +971,11 @@ main{
 
     .sujectImg2Text{
         width: 80%;
-        height:80%;
+        height:100%;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 3%;
         font-size: 130%;
+        padding-top: 3%;
     
      }
 }
@@ -866,11 +984,11 @@ main{
    
  .sujectImg2Text{
     width: 80%;
-    height:80%;
+    height:100%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 3%;
     font-size: 150%;
+    padding-top: 3%;
 
  }
 }
@@ -1010,11 +1128,12 @@ main{
 
 .footerSubtext{
 
-    text-align: center;
-    width:100%;
+    width:120%;
     height: 20%;
     margin-top: -10% ;
-    font-size: 10%;
+    font-size:2%;
+    padding-right: 19%;
+    margin-right: 5%;
 
 }
 
@@ -1160,40 +1279,96 @@ main{
 
     margin-top: 5%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     
 
 }
 
+@media (min-width:556px) {
+    .wrapper{
+
+        margin-top: 5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr ;
+        
+    
+    }
+}
+
 .Subjectbox{
 
-    transform: scale(1);
+
+    position: relative;
+
+}
+
+.Subjectbox .SubjectBoxImg .sujectImgBox{
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    opacity: 0;
+
+}
+
+
+.Subjectbox .SubjectBoxImg:hover .sujectImgBox{
+
+    transition-property: opacity;
     transition-duration: 0.2s;
+    opacity: 0.9;
+
+}
+
+.Img{
 
 
 }
 
-.Subjectbox:hover{
 
-    transform: scale(1.1);
-    transition-duration: 0.2s;
 
+.SubjectBoxImg{
+
+    position: relative;
 }
+
+
 
 .wrapper .Subjectbox:nth-child(2n) .SubjectBoxImg{
-
+    
     margin-right: auto;
-    margin-left: 6%;
+    margin-left:auto;
 
 }
+
+@media (min-width:556px) {
+    .wrapper .Subjectbox:nth-child(2n) .SubjectBoxImg{
+    
+        margin-right: auto;
+        margin-left: 6%;
+    
+    }
+}
+
+
 
 .wrapper .Subjectbox:nth-child(2n+1) .SubjectBoxImg{
 
     margin-left: auto;
-    margin-right: 6%;
+    margin-right: auto;
 
 }
+
+@media (min-width:556px) {
+    .wrapper .Subjectbox:nth-child(2n+1) .SubjectBoxImg{
+
+        margin-left: auto;
+        margin-right: 6%;
+    
+    }
+    
+}
+
 
 .Subjectbox{
 
