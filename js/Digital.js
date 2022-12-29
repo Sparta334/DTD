@@ -73,7 +73,7 @@ $(document).ready(function () {
          .catch(function(error){
 
 
-            $(".FileBtn").html(`<img src="./@Resoure/universal/download.webpGMP" height="100%" width="100%" alt="">`);
+            $(".FileBtn").html(`<img src="./@Resoure/universal/download.webp" height="100%" width="100%" alt="">`);
             alert("No File");
 
 
