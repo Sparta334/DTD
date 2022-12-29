@@ -1196,7 +1196,7 @@ main{
     height: 100%;
     margin-top: -10% ;
     font-size: 50%;
-    margin-left: -3%;
+    padding-right: 6%;
 }
 
 @media (min-width: 476px){
